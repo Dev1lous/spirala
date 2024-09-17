@@ -40,11 +40,11 @@ InitializeComponent();
             int right = mapX - 1;
             bool jePrvni = false;
 ```
-Tady si nastavuju hodnoty pro horni, dolni, levou a pravou řadu.
+- Tady si nastavuju hodnoty pro horni, dolni, levou a pravou řadu.
 ```cs
   while (top <= bottom && left <= right)
 ```
-While loop funguje tak že jednodušše vysvětleno veprostřed se loop zastaví protože se ty řady potkají.
+- While loop funguje tak že jednodušše vysvětleno veprostřed se loop zastaví protože se ty řady potkají.
 
 ```cs
                 if (jePrvni == true)
@@ -108,8 +108,8 @@ While loop funguje tak že jednodušše vysvětleno veprostřed se loop zastaví
                 }
                 left += 2;  
 ```
-U horní řady mam if statement a pokud je true tak spustím for loop, kdybych to nechal bez toho if statementu a toho for loopu v tom statementu tak mi to nevykreslí začáteční block.
-For loop kde podle toho kam ty blocky posílám tak udělám for loop, v for loopu je kód na vykreslování a poté posunu tu určitou řadu/sloupec o 2 blocky.
+- U horní řady mam if statement a pokud je true tak spustím for loop, kdybych to nechal bez toho if statementu a toho for loopu v tom statementu tak mi to nevykreslí začáteční block.
+- For loop kde podle toho kam ty blocky posílám tak udělám for loop, v for loopu je kód na vykreslování a poté posunu tu určitou řadu/sloupec o 2 blocky.
 
 ## Kód rekurzní
 ```cs
@@ -156,7 +156,7 @@ Tady zase dělám grid a volám metodu ```DrawSpiral```
             map.Children.Add(border);
         }
 ```
-Zde mam metodu na vykreslení jednotlivých blocků
+- Zde mam metodu na vykreslení jednotlivých blocků
 ```cs
  private void DrawSpiral(Grid map, int top, int bottom, int left, int right, bool isFirst)
         {
@@ -208,4 +208,4 @@ Zde mam metodu na vykreslení jednotlivých blocků
     }
 }
 ```
-Celá metoda funguje uplně stejně jak bez rekurze akorát zde to vykresluji ```AddBlock``` metodou a na konci volám metodu ```DrawSpiral``` a zase se to opakuje dokud muj while loop neskončí.
+- Celá metoda funguje uplně stejně jak bez rekurze akorát zde to vykresluji ```AddBlock``` metodou a na konci volám metodu ```DrawSpiral``` a zase se to opakuje dokud muj while loop neskončí.
