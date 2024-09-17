@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Algoritmus_1_Projekt1/1.0.0": {
+        "runtime": {
+          "Algoritmus_1_Projekt1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Algoritmus_1_Projekt1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
